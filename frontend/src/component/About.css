@@ -1,0 +1,27 @@
+.about {
+      text-align: center;
+      padding: 70px;
+      background-color: #ffffff;
+      
+    }
+    
+    .about-title {
+      font-size: 1.0rem;
+      color : gray;
+      margin-bottom: 0px;
+    }
+    .about-subtitle {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 40;
+    }
+    
+    .about-text {
+      font-size: 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      line-height: 1.5;
+      color : gray;
+      margin-bottom: 0px;
+    }
+    

@@ -1,0 +1,105 @@
+.services {
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-main-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  
+}
+
+.services-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  line-height: 1.6;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 0 20px;
+}
+
+.service-card {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  border-radius: 8px; /* Rounded corners */
+  min-height: 200px; /* Minimum height for the rectangle */
+  transition: transform 0.3s ease; /* Smooth transition for bounce effect */
+  cursor: pointer; /* Shows hand cursor on hover */
+}
+
+/* Bounce effect on hover */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Optional: adds shadow when bouncing */
+}
+
+/* Active state when clicked */
+.service-card:active {
+  transform: translateY(-5px); /* Smaller bounce when clicked */
+}
+
+.icon-container {
+  background-color: #eef7ff;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.service-icon {
+  font-size: 20px;
+  color: #0066ff;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .services-main-title {
+    font-size: 2.2rem;
+  }
+
+  .services {
+    padding: 60px 16px;
+  }
+}

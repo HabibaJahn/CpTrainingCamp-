@@ -1,0 +1,99 @@
+/* Header.css */
+.header {
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #808080; /* Gray background */
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    
+    /* Keeps the logo inside the navigation */
+    .header .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-right: 10rem; /* Adds spacing before navigation */
+    }
+    
+    /* Centers the navigation */
+    .header nav {
+      display: flex;
+      margin-right: 30rem;
+      margin-left: 10rem;
+      gap: 3rem; /* Space between links */
+    }
+    
+    /* Navigation links */
+    .header nav a {
+      color: white;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .header nav a:hover {
+      color: #2a416d; /* Gold on hover */
+    }
+    
+    /* Auth Buttons Styles */
+    .auth-buttons {
+      display: flex;
+      gap: 1rem;
+      align-items: right;
+      margin-left: 0rem; /* This will pull the buttons to the left */
+    }
+    
+    .login-btn, .signup-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    }
+    
+    .login-btn {
+      color: white;
+      border: 1px solid white;
+    }
+    
+    .login-btn:hover {
+      color: #FFD700;
+      border-color: #FFD700;
+    }
+    
+    .signup-btn {
+      background-color: #c7d0df;
+      color: #625a5a;
+      border: 1px solid #d5d4cd;
+    }
+    
+    .signup-btn:hover {
+      background-color: white;
+      border-color: white;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header {
+        padding: 1rem;
+      }
+      
+      .header nav {
+        gap: 1.5rem;
+      }
+      
+      .auth-buttons {
+        gap: 0.5rem;
+        margin-left: -4rem; /* Adjusted for mobile */
+      }
+      
+      .login-btn, .signup-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+      }
+    }
+    
