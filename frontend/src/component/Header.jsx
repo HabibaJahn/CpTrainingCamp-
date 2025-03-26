@@ -1,4 +1,5 @@
 import "./Header.css";
+import { Link } from 'react-router-dom';
 
 const Header = ({ setIsAuthOpen }) => {
   return (
@@ -8,10 +9,10 @@ const Header = ({ setIsAuthOpen }) => {
 
       {/* Navigation Links */}
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">Schedule</a>
-        <a href="#schedule">Leaderboard</a>
-        <a href="#teams">Teams</a>
+        <Link to="/">Home</Link>
+        <Link to="/schedule">Schedule</Link>
+        <Link to="/leaderboard">Leaderboard</Link>
+        <Link to="/teams">Teams</Link>
       </nav>
 
       {/* Login/Signup Buttons */}
