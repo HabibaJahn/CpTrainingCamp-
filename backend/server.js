@@ -162,6 +162,25 @@ app.post('/api/schedules', async (req, res) => {
   }
 });
 
+// Get All Schedules API
+app.get('/api/schedules', async (req, res) => {
+  try {
+    const schedules = await Schedule.find().sort({ time: 1 });
+    console.log('Fetched schedules:', schedules); // Debug log
+    res.json({
+      success: true,
+      schedules: schedules
+    });
+  } catch (error) {
+    console.error('Error fetching schedules:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Error fetching schedules',
+      error: error.message
+    });
+  }
+});
+
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
